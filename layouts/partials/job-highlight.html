@@ -1,0 +1,13 @@
+{{- $job := .job -}}
+{{- $num := .num -}}
+
+<section id="highlight-{{ $job.name }}" class="wrapper spotlight {{ if not (modBool $num 2) }}alt{{ end }} style{{ $num }}">
+    <div class="inner">
+        <a href="{{ $job.website }}" class="image"><img src="{{ $job.imageSrc }}" alt="{{ $job.imageAlt }}" /></a>
+        <div class="content">
+            <h2 class="major">{{ $job.name }}</h2>
+            <p>{{ $job.description }}</p>
+            <a href="{{ $job.website }}" class="special">Meer info</a>
+        </div>
+    </div>
+</section>

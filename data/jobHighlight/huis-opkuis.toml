@@ -1,0 +1,6 @@
+name = "Huisopruimingen"
+description = "Allround party & trouwfeest DJ"
+imageSrc = "/images/sponsors/djlebart_logo.webp"
+imageAlt = "DJ Le Bart Logo"
+website = "https://www.djlebart.be/"
+weight = "2"

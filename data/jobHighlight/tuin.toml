@@ -1,0 +1,6 @@
+name = "Tuin"
+description = "Tuinonderhoud en aanleg"
+imageSrc = "/images/sponsors/djlebart_logo.webp"
+imageAlt = "DJ Le Bart Logo"
+website = "https://www.djlebart.be/"
+weight = "6"

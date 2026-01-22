@@ -1,0 +1,6 @@
+name = "Klussen"
+description = "Allerlei klussen in en rond het huis"
+imageSrc = "/images/sponsors/djlebart_logo.webp"
+imageAlt = "DJ Le Bart Logo"
+website = "https://www.djlebart.be/"
+weight = "4"
