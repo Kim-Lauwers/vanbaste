@@ -1,10 +1,9 @@
 <!-- Footer -->
 <section id="footer">
     <div class="inner">
-        <h2 class="major">Get in touch</h2>
-        <p>Cras mattis ante fermentum, malesuada neque vitae, eleifend erat. Phasellus non pulvinar erat. Fusce
-            tincidunt, nisl eget mattis egestas, purus ipsum consequat orci, sit amet lobortis lorem lacus in tellus.
-            Sed ac elementum arcu. Quisque placerat auctor laoreet.</p>
+        <h2 class="major">Contacteer ons</h2>
+        <p>{{ .Site.Params.shortSiteName }} is opgericht met een helder en krachtig doel: het vinden van een betrouwbare partner eenvoudig maken.</p>
+
         <ul class="contact">
             {{ range sort .Site.Data.contact "weight" }}
             <li class="icon {{ .class }}">

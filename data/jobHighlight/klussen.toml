@@ -1,6 +1,6 @@
 name = "Klussen"
-description = "Allerlei klussen in en rond het huis"
-imageSrc = "/images/sponsors/djlebart_logo.webp"
+description = "Kleine en grote klusjes in en rond het huis, vakkundig en zorgeloos uitgevoerd."
+imageSrc = "/images/pic02.jpg"
 imageAlt = "DJ Le Bart Logo"
 website = "https://www.djlebart.be/"
 weight = "4"

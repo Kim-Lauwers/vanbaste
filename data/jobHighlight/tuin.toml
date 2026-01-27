@@ -1,6 +1,6 @@
 name = "Tuin"
-description = "Tuinonderhoud en aanleg"
-imageSrc = "/images/sponsors/djlebart_logo.webp"
+description = "Van tuinonderhoud tot aanleg: wij maken en houden uw tuin in topvorm."
+imageSrc = "/images/pic03.jpg"
 imageAlt = "DJ Le Bart Logo"
 website = "https://www.djlebart.be/"
 weight = "6"
