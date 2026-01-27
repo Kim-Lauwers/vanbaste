@@ -1,0 +1,4 @@
+class = "solid fa-envelope"
+name = "Email"
+url = "mailto:info@invictokeerbergen.be"
+weight = 10

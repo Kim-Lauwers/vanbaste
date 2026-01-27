@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title></title>
+    <link>http://localhost:1313/</link>
+    <description>Recent content on </description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Tue, 09 Mar 2021 11:19:39 +0100</lastBuildDate>
+    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Pagina niet gevonden</title>
+      <link>http://localhost:1313/404/</link>
+      <pubDate>Tue, 09 Mar 2021 11:19:39 +0100</pubDate>
+      <guid>http://localhost:1313/404/</guid>
+      <description>&lt;p&gt;De gevraagde pagina kon niet gevonden geworden.&lt;/p&gt;&#xA;&lt;p&gt;Via onze &lt;a href=&#34;http://localhost:1313/&#34;&gt;homepage&lt;/a&gt; kan je zeker de juiste pagina vinden.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

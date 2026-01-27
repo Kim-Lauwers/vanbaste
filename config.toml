@@ -9,5 +9,8 @@ baseURL = "https://www.vanbaste.be"
     shortSiteName="Van Baste"
     description="Huisopruimingen, karweitdiensten en tuinonderhoud"
 
+[markup.goldmark.renderer]
+    hardWraps = true
+
 [permalinks]
     nieuws = "/:section/:year/:month/:day/:slug/"
