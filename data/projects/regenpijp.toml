@@ -1,0 +1,5 @@
+name = "Regenpijp"
+imageThumbnailSrc = "/images/projects/regenpijp.webp"
+imageSrc = "/images/projects/regenpijp.webp"
+imageAlt = "Regenpijp"
+weight = "20"

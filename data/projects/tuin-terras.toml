@@ -1,0 +1,5 @@
+name = "Tuin Terras"
+imageThumbnailSrc = "/images/projects/tuin-terras.webp"
+imageSrc = "/images/projects/tuin-terras.webp"
+imageAlt = "Tuin Terras"
+weight = "30"

@@ -1,0 +1,5 @@
+name = "Afbraak pagode"
+imageThumbnailSrc = "/images/projects/afbraak-pagode.webp"
+imageSrc = "/images/projects/afbraak-pagode.webp"
+imageAlt = "Afbraak pagode"
+weight = "32"

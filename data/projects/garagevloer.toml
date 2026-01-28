@@ -1,0 +1,5 @@
+name = "Garagevloer"
+imageThumbnailSrc = "/images/projects/garagevloer.webp"
+imageSrc = "/images/projects/garagevloer.webp"
+imageAlt = "Garagevloer"
+weight = "10"

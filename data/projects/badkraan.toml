@@ -1,0 +1,5 @@
+name = "Badkraan"
+imageThumbnailSrc = "/images/projects/badkraan.webp"
+imageSrc = "/images/projects/badkraan.webp"
+imageAlt = "Badkraan"
+weight = "22"

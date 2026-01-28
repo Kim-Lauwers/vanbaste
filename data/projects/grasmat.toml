@@ -1,0 +1,5 @@
+name = "Grasmat"
+imageThumbnailSrc = "/images/projects/grasmat.png"
+imageSrc = "/images/projects/grasmat.png"
+imageAlt = "Aangelegde grasmat in een tuin"
+weight = "4"

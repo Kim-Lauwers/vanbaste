@@ -1,0 +1,5 @@
+name = "Tuinpoortje"
+imageThumbnailSrc = "/images/projects/tuinpoortje.png"
+imageSrc = "/images/projects/tuinpoortje.png"
+imageAlt = "Tuinpoortje voor een kippenhokje"
+weight = "2"

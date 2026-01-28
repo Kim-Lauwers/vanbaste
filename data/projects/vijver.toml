@@ -1,0 +1,5 @@
+name = "Vijver"
+imageThumbnailSrc = "/images/projects/vijver.webp"
+imageSrc = "/images/projects/vijver.webp"
+imageAlt = "Vijver"
+weight = "40"

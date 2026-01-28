@@ -1,0 +1,5 @@
+name = "Bloemenperkje"
+imageThumbnailSrc = "/images/projects/bloemenperkje.webp"
+imageSrc = "/images/projects/bloemenperkje.webp"
+imageAlt = "Bloemenperkje"
+weight = "14"

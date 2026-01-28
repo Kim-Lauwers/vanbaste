@@ -1,0 +1,5 @@
+name = "Paardenstal"
+imageThumbnailSrc = "/images/projects/paardenstal.webp"
+imageSrc = "/images/projects/paardenstal.webp"
+imageAlt = "Paardenstal"
+weight = "16"

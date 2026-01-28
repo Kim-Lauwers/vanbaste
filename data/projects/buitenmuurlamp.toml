@@ -1,0 +1,5 @@
+name = "Buitenmuurlamp"
+imageThumbnailSrc = "/images/projects/buitenmuurlamp.webp"
+imageSrc = "/images/projects/buitenmuurlamp.webp"
+imageAlt = "Buitenmuurlamp"
+weight = "18"

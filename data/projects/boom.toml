@@ -1,0 +1,5 @@
+name = "Boom"
+imageThumbnailSrc = "/images/projects/boom.webp"
+imageSrc = "/images/projects/boom.webp"
+imageAlt = "Boom"
+weight = "24"

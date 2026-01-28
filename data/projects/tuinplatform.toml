@@ -1,0 +1,5 @@
+name = "Tuinplatform"
+imageThumbnailSrc = "/images/projects/tuinplatform.webp"
+imageSrc = "/images/projects/tuinplatform.png"
+imageAlt = "Tuinplatform"
+weight = "8"
