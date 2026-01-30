@@ -1,6 +1,6 @@
 [build]
 publish = "public"
-command = "hugo --gc --minify -b $URL"
+command = "hugo --gc --minify -baseURL $URL"
 
 [build.environment]
 HUGO_VERSION = "0.154.5"
@@ -9,10 +9,10 @@ HUGO_VERSION = "0.154.5"
 command = "hugo -b $DEPLOY_PRIME_URL --buildDrafts --buildFuture"
 
 [context.deploy-preview]
-command = "hugo -b $DEPLOY_URL"
+command = "hugo --gc --minify --baseURL $DEPLOY_PRIME_URL"
 
 [context.branch-deploy]
-command = "hugo -b $DEPLOY_PRIME_URL"
+command = "hugo --gc --minify --baseURL $DEPLOY_PRIME_URL"
 
 # Config for the Netlify Build Plugin: netlify-plugin-minify-html
 [[plugins]]
@@ -27,3 +27,8 @@ contexts = [
     'branch-deploy',
     'deploy-preview'
 ]
+
+[[redirects]]
+from = "/*"
+to = "/404/"
+status = 404

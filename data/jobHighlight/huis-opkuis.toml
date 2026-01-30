@@ -1,6 +1,6 @@
 name = "Huisopruimingen"
 description = "Snelle en discrete huisopruimingen, volledig afgestemd op uw situatie."
 imageSrc = "/images/pic01.jpg"
-imageAlt = "DJ Le Bart Logo"
+imageAlt = "Huisopruimingen"
 website = "/huisopruimingen"
 weight = "2"

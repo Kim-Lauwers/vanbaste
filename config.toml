@@ -11,6 +11,3 @@ baseURL = "https://www.vanbaste.be"
 
 [markup.goldmark.renderer]
     hardWraps = true
-
-[permalinks]
-    nieuws = "/:section/:year/:month/:day/:slug/"
