@@ -1,0 +1,46 @@
+{{/* layouts/partials/head/seo.html */}}
+{{- $title := .Title -}}
+{{- $siteTitle := .Site.Title -}}
+{{- $fullTitle := cond (ne $title "") (printf "%s | %s" $title $siteTitle) $siteTitle -}}
+
+<title>{{ $fullTitle }}</title>
+
+{{- $desc := .Params.description | default .Summary | default .Site.Params.description -}}
+{{- if $desc }}
+<meta name="description" content="{{ $desc | plainify | htmlEscape }}">
+{{- end }}
+
+{{- $robots := "index,follow" -}}
+{{- if .Params.noindex -}}
+{{- $robots = "noindex,nofollow" -}}
+{{- end -}}
+<meta name="robots" content="{{ $robots }}">
+
+{{ if .Params.noindex }}
+<meta property="robots" name="robots" content="noindex" />
+{{ end }}
+{{ if .Params.nocache }}
+<meta property="robots" name="robots" content="nocache" />
+{{ end }}
+
+{{- $canonical := .Permalink -}}
+<link rel="canonical" href="{{ $canonical }}">
+
+<meta property="og:locale" content="nl_BE">
+<meta property="og:type" content="website">
+<meta property="og:title" content="{{ $fullTitle }}">
+{{- if $desc }}<meta property="og:description" content="{{ $desc | plainify | htmlEscape }}">{{- end }}
+<meta property="og:url" content="{{ $canonical }}">
+<meta property="og:site_name" content="{{ $siteTitle }}">
+
+{{/* Optional: default OG image */}}
+{{- with .Site.Params.ogImage }}
+<meta property="og:image" content="{{ . | absURL }}">
+{{- end }}
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="{{ $fullTitle }}">
+{{- if $desc }}<meta name="twitter:description" content="{{ $desc | plainify | htmlEscape }}">{{- end }}
+{{- with .Site.Params.ogImage }}
+<meta name="twitter:image" content="{{ . | absURL }}">
+{{- end }}
