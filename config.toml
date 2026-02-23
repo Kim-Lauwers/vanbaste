@@ -1,4 +1,4 @@
-baseURL = "https://www.vanbaste.be"
+baseURL = "https://vanbaste.be"
 
 [pagination]
     pagerSize = 10
