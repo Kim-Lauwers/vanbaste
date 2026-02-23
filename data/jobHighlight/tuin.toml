@@ -1,6 +1,6 @@
 name = "Tuin"
 description = "Van tuinonderhoud tot aanleg: wij maken en houden uw tuin in topvorm."
-imageSrc = "/images/jobHighlight/karweiwerken.webp"
+imageSrc = "/images/jobHighlight/tuin.webp"
 imageAlt = "Een grasmat die wordt aangelegd, een voorbeeld van tuinwerken."
 website = "/tuinaanleg-en-onderhoud"
 weight = "6"
