@@ -30,5 +30,5 @@ contexts = [
 
 [[redirects]]
 from = "/*"
-to = "/404/"
+to = "/404.html"
 status = 404
