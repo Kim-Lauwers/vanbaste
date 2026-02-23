@@ -27,8 +27,3 @@ contexts = [
     'branch-deploy',
     'deploy-preview'
 ]
-
-[[redirects]]
-from = "/*"
-to = "/404.html"
-status = 404
