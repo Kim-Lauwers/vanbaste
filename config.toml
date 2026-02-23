@@ -7,7 +7,7 @@ baseURL = "https://vanbaste.be"
     dateForm = "January 21, 2026"
     title = "Van Baste"
     shortSiteName="Van Baste"
-    description="Huisopruimingen, karweitdiensten en tuinonderhoud"
+    description="Huisopruimingen, karweidiensten en tuinonderhoud"
 
 [markup.goldmark.renderer]
     hardWraps = true
