@@ -1,6 +1,6 @@
 name = "Karweiwerken"
 description = "Kleine en grote klusjes in en rond het huis, vakkundig en zorgeloos uitgevoerd."
-imageSrc = "/images/pic02.jpg"
-imageAlt = "Karweiwerken"
+imageSrc = "/images/jobHighlight/karweiwerken.webp"
+imageAlt = "Boven de foto een oude kraan en onderaan een nieuwe kraan die geïnstalleerd wordt, een voorbeeld van karweiwerken."
 website = "/karweiwerken"
 weight = "4"
