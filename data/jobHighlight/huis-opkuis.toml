@@ -1,6 +1,6 @@
 name = "Huisopruimingen"
 description = "Snelle en discrete huisopruimingen, volledig afgestemd op uw situatie."
-imageSrc = "/images/jobHighlight/huis-opkuis.jpg"
+imageSrc = "/images/jobHighlight/huis-opkuis.webp"
 imageAlt = "Een living van een huis dat opgeruimd moet worden."
 website = "/huisopruimingen"
 weight = "2"

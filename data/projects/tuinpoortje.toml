@@ -1,5 +1,5 @@
 name = "Tuinpoortje"
-imageThumbnailSrc = "/images/projects/tuinpoortje.png"
-imageSrc = "/images/projects/tuinpoortje.png"
+imageThumbnailSrc = "/images/projects/tuinpoortje.webp"
+imageSrc = "/images/projects/tuinpoortje.webp"
 imageAlt = "Tuinpoortje voor een kippenhokje"
 weight = "2"
