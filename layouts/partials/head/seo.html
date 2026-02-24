@@ -2,7 +2,18 @@
 {{- $pageTitle := .Title -}}
 {{- $siteTitle := or .Site.Title .Site.Params.title .Site.Params.shortSiteName -}}
 
-{{- $fullTitle := cond (ne $pageTitle "") (printf "%s | %s" $pageTitle $siteTitle) $siteTitle -}}
+{{- $isHome := .IsHome -}}
+{{- $homeTitle := printf "%s – %s" $siteTitle (.Site.Params.description | default "") -}}
+
+{{- $fullTitle := "" -}}
+{{- if $isHome -}}
+{{- $fullTitle = $homeTitle -}}
+{{- else if and (ne $pageTitle "") (ne $pageTitle $siteTitle) -}}
+{{- $fullTitle = printf "%s | %s" $pageTitle $siteTitle -}}
+{{- else -}}
+{{- $fullTitle = $siteTitle -}}
+{{- end -}}
+
 <title>{{ $fullTitle }}</title>
 
 {{- $desc := .Params.description | default .Summary | default .Site.Params.description -}}
@@ -14,25 +25,21 @@
 {{- if .Params.noindex -}}
 {{- $robots = "noindex,nofollow" -}}
 {{- end -}}
+{{- if .Params.nocache -}}
+{{- $robots = printf "%s,%s" $robots "noarchive" -}}
+{{- end -}}
 <meta name="robots" content="{{ $robots }}">
-
-{{ if .Params.noindex }}
-<meta property="robots" name="robots" content="noindex" />
-{{ end }}
-{{ if .Params.nocache }}
-<meta property="robots" name="robots" content="nocache" />
-{{ end }}
 
 {{- $canonical := .Permalink -}}
 <link rel="canonical" href="{{ $canonical }}">
 
-<link rel="icon" type="image/png" href="/images/site/icon/favicon16x16.png" sizes="16x16" />
-<link rel="icon" type="image/png" href="/images/site/icon/favicon32x32.png" sizes="32x32" />
-<link rel="icon" type="image/png" href="/images/site/icon/favicon96x96.png" sizes="96x96" />
-<link rel="shortcut icon" href="/images/site/icon/favicon-196.png" sizes="196x196" />
-<link rel="apple-touch-icon" sizes="72x72" href="/images/site/icon/touch-ipad.png" />
-<link rel="apple-touch-icon" sizes="114x114" href="/images/site/icon/touch-iphone.png" />
-<link rel="apple-touch-icon" sizes="152x152" href="/images/site/icon/touch-ipad-ret.png" />
+<link rel="icon" type="image/png" href="/site/icon/favicon16x16.png" sizes="16x16" />
+<link rel="icon" type="image/png" href="/site/icon/favicon32x32.png" sizes="32x32" />
+<link rel="icon" type="image/png" href="/site/icon/favicon96x96.png" sizes="96x96" />
+<link rel="shortcut icon" href="/site/icon/favicon196x196.png" sizes="196x196" />
+<link rel="apple-touch-icon" sizes="72x72" href="/site/icon/touch-ipad.png" />
+<link rel="apple-touch-icon" sizes="114x114" href="/site/icon/touch-iphone.png" />
+<link rel="apple-touch-icon" sizes="152x152" href="/site/icon/touch-ipad-ret.png" />
 
 <meta property="og:locale" content="nl_BE">
 <meta property="og:type" content="website">
@@ -52,3 +59,34 @@
 {{- with .Site.Params.ogImage }}
 <meta name="twitter:image" content="{{ . | absURL }}">
 {{- end }}
+
+{{ $address := .Site.Data.contact.address }}
+{{ $btw := .Site.Data.contact.btw }}
+
+<script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "HomeAndConstructionBusiness",
+        "name": "{{ .Site.Params.shortSiteName }}",
+        "url": "{{ "/" | absURL }}",
+        "description": "{{ .Site.Params.description | plainify | htmlEscape }}",
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "{{ $address.street }}",
+            "postalCode": "{{ $address.postalCode }}",
+            "addressLocality": "{{ $address.city }}",
+            "addressCountry": "{{ $address.country }}"
+        },
+        "vatID": "{{ $btw.name }}",
+        "sameAs": [
+            {{- $first := true -}}
+            {{- range sort .Site.Data.socials "weight" -}}
+            {{- if .schema -}}
+            {{- if not $first }},{{ end -}}
+            {{- $first = false -}}
+            "{{ .url }}"
+            {{- end -}}
+            {{- end -}}
+        ]
+    }
+</script>

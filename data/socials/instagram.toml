@@ -2,3 +2,4 @@ class = "brands fa-instagram"
 name = "Instagram Van Baste"
 url = "https://www.instagram.com/vanbastevde/"
 weight = 3
+schema = true

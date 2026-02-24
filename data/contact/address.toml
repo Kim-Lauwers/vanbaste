@@ -4,4 +4,11 @@ VanBaste
 Putsebaan 272
 3140 Keerbergen
 """
+
+# Voor JSON-LD
+businessName = "VanBaste"
+street = "Putsebaan 272"
+postalCode = "3140"
+city = "Keerbergen"
+country = "BE"
 weight = 3

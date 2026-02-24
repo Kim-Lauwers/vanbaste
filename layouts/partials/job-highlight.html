@@ -3,11 +3,11 @@
 
 <section id="highlight-{{ $job.name }}" class="wrapper spotlight {{ if not (modBool $num 2) }}alt{{ end }} style{{ $num }}">
     <div class="inner">
-        <a href="{{ $job.website }}" class="image"><img src="{{ $job.imageSrc }}" alt="{{ $job.imageAlt }}" /></a>
+        <a href="{{ $job.website }}" class="image"><img src="{{ $job.imageSrc }}" alt="{{ $job.imageAlt }}" loading="lazy" decoding="async"/></a>
         <div class="content">
             <h2 class="major">{{ $job.name }}</h2>
             <p>{{ $job.description }}</p>
-            <a href="{{ $job.website }}" class="special">Meer info</a>
+            <a href="{{ $job.website }}" class="special">Meer info over {{ $job.name }}</a>
         </div>
     </div>
 </section>

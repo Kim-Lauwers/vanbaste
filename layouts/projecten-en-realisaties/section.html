@@ -37,7 +37,7 @@
                         <div class="row gtr-uniform">
 
                             {{ range sort .Site.Data.projects "weight" }}
-                            <div class="col-4"><span class="image fit"><img src="{{ .imageThumbnailSrc }}" alt="{{ .imageAlt }}" /></span></div>
+                            <div class="col-4"><span class="image fit"><img src="{{ .imageThumbnailSrc }}" alt="{{ .imageAlt }}" loading="lazy" decoding="async" /></span></div>
                             {{ end }}
 
                         </div>

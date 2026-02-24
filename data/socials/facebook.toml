@@ -2,3 +2,4 @@ class = "brands fa-facebook-f"
 name = "Facebook Van Baste"
 url = "https://www.facebook.com/vanbastetuinenkarweiwerken"
 weight = 5
+schema = true
