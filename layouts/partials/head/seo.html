@@ -20,6 +20,7 @@
 {{- if $desc }}
 <meta name="description" content="{{ $desc | plainify | htmlEscape }}">
 {{- end }}
+<meta http-equiv="content-language" content="nl-BE">
 
 {{- $robots := "index,follow" -}}
 {{- if .Params.noindex -}}
