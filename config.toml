@@ -1,4 +1,5 @@
 baseURL = "https://vanbaste.be"
+title = "Van Baste"
 
 [pagination]
     pagerSize = 10

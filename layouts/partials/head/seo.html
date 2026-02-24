@@ -1,8 +1,8 @@
 {{/* layouts/partials/head/seo.html */}}
-{{- $title := .Title -}}
-{{- $siteTitle := .Site.Title -}}
-{{- $fullTitle := cond (ne $title "") (printf "%s | %s" $title $siteTitle) $siteTitle -}}
+{{- $pageTitle := .Title -}}
+{{- $siteTitle := or .Site.Title .Site.Params.title .Site.Params.shortSiteName -}}
 
+{{- $fullTitle := cond (ne $pageTitle "") (printf "%s | %s" $pageTitle $siteTitle) $siteTitle -}}
 <title>{{ $fullTitle }}</title>
 
 {{- $desc := .Params.description | default .Summary | default .Site.Params.description -}}
