@@ -20,26 +20,28 @@
     </header>
 
     {{ partial "menu.html" . }}
+    <main id="main-content">
 
-    <!-- Wrapper -->
-    <section id="wrapper">
-        <header>
-            <div class="inner">
-                <h2>{{ .Title }}</h2>
-                <p>{{ .Description }}</p>
+        <!-- Wrapper -->
+        <section id="wrapper">
+            <header>
+                <div class="inner">
+                    <h2>{{ .Title }}</h2>
+                    <p>{{ .Description }}</p>
+                </div>
+            </header>
+
+            <!-- Content -->
+            <div class="wrapper">
+                <div class="inner">
+
+                    {{ .Content }}
+
+                </div>
             </div>
-        </header>
 
-        <!-- Content -->
-        <div class="wrapper">
-            <div class="inner">
-
-                {{ .Content }}
-
-            </div>
-        </div>
-
-    </section>
+        </section>
+    </main>
 
     {{ partial "footer.html" . }}
 
